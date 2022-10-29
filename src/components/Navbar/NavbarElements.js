@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: #22002d;
   height: 80px;
-  // margin-top: -80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,6 +53,10 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #fff;
   }
+  &:hover {
+    color: #9900cc;
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -81,7 +85,11 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #9900cc;
+  }
+  &:hover {
+    color: #9900cc;
+    transition: 0.2s ease-in-out;
   }
 `;
 
@@ -89,5 +97,3 @@ export const Logo = styled.img`
   width: 80px;
   height: 80px;
 `;
-
-//https://www.youtube.com/watch?v=Nl54MJDR2p8 @18:37
